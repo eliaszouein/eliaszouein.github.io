@@ -1,0 +1,133 @@
+<!doctype html>
+<!--Elias Zouein 201710039-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Events</title>
+
+<link href="../styles.css" type="text/css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="headerl">
+	<img src="../images/logo.png" id="logo">
+	<u><h1 class="h1" >Cedars Scout</h1></u>
+	<h2 class="h2" >Our-Lady of Hadat Group</h2>
+	<h3 class="h3">"Scout be prepared!"</h3>
+</div>
+ <!-- drop down menu-->
+
+	<ul class="dropmenu">
+		<li ><a href="home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="events.html">Events</a></li>
+	 <li><div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div></li>
+
+<button class="openBtn" onclick="openSearch()">Open Search Box</button>
+</ul>
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+	</script>
+	
+<div id="main">
+	<div id="mainleft">
+		
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+     December<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6 <br>weekly meeeting</li>
+  <li>7</li>
+  <li>8 <br>christmas work @church</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13 <br>weekly meeting</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20<br> weekly meeting</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+   <li><span class="active">24<br> @12 mass</span></li>
+  <li>25</li>
+  <li>26 <br>christmas camp</li>
+  <li>27 <br>christmas camp</li>
+  <li>28 <br>christmas camp</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+<br>
+<p>
+	
+		<span style=" font-size:30px">News about our weekly meetings and events in this month</span>
+	
+</p>
+	</div >
+	<div id="mainright">
+   <ul class="right">
+    <li ><a href="Stages.html">Stages</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="songs.html">Songs</a></li>
+    <li><a href="more.html">More Infos</a></li>
+    </ul>
+    <img src="../images/salut.png" id="salut">
+  </div>
+</div>
+
+<!-- copyrights + social media links-->
+<div id="footer"> Copyright ©Cedars scout team<br>
+All Rights Reserved
+<a id="facebook" href="http://www.facebook.com/sdchadat/" target="new">Facebook</a>
+<a id="insta" href="https://www.instagram.com/sdc_hadat/" target="new">Instagram</a>
+</div>
+
+</body>
+</html>

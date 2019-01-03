@@ -1,0 +1,99 @@
+<!doctype html>
+<!--Elias Zouein 201710039-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>About us</title>
+
+<link href="../styles.css" type="text/css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<body>
+<div id="headerl">
+	<img src="../images/logo.png" id="logo">
+	<u><h1 class="h1" >Cedars Scout</h1></u>
+	<h2 class="h2" >Our-Lady of Hadat Group</h2>
+	<h3 class="h3">"Scout be prepared!"</h3>
+</div>
+ <!-- drop down menu-->
+
+	<ul class="dropmenu">
+		<li ><a href="home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="events.html">Events</a></li>
+	 <li><div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div></li>
+
+<button class="openBtn" onclick="openSearch()">Open Search Box</button>
+</ul>
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+	</script>
+	
+<div id="main">
+	<div id="mainleft">
+		<br><br>
+<div class="div1">Kids Weekly Meeting <br><br>
+Every saturday at 3:30 o'clock till 5
+</div>
+<br><br>
+<div class="div1">
+	Scout Weekly Meeting<br><br>
+	Every saturday at 5 o'clock till 6:30
+</div>
+<br><br>
+<div class="div1">
+	Routerier Weekly Meeting<br><br>
+	Every friday at 6 o'clock till 7
+</div>
+If you're intrested to join us enter you're name here
+<form name="myForm" action="../files/New Text Document.txt" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+	</div >
+	<div id="mainright">
+   <ul class="right">
+    <li ><a href="Stages.html">Stages</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="songs.html">Songs</a></li>
+    <li><a href="more.html">More Infos</a></li>
+    </ul>
+    <img src="../images/salut.png" id="salut">
+  </div>
+</div>
+
+<!-- copyrights + social media links-->
+<div id="footer"> Copyright ©Cedars scout team<br>
+All Rights Reserved
+<a id="facebook" href="http://www.facebook.com/sdchadat/" target="new">Facebook</a>
+<a id="insta" href="https://www.instagram.com/sdc_hadat/" target="new">Instagram</a>
+</div>
+
+</body>
+</html>

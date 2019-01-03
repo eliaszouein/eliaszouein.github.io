@@ -1,0 +1,85 @@
+<!doctype html>
+<!--Elias Zouein 201710039-->
+<html>
+<head>
+<meta charset="utf-8">
+<title> Contact</title>
+<link href="../styles.css" type="text/css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="headerl">
+	<img src="../images/logo.png" id="logo">
+	<u><h1 class="h1" >Cedars Scout</h1></u>
+	<h2 class="h2" >Our-Lady of Hadat Group</h2>
+	<h3 class="h3">"Scout be prepared!"</h3>
+</div>
+ <!-- drop down menu-->
+
+	<ul class="dropmenu">
+		<li ><a href="home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="events.html">Events</a></li>
+	 <li><div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div></li>
+
+<button class="openBtn" onclick="openSearch()">Open Search Box</button>
+</ul>
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+	</script>
+	
+<div id="main">
+
+	<div id="mainleft" class="backg">
+     <img src="../images/Capture.PNG" id="map">
+	
+<br>
+<br>
+
+<a href="http://www.facebook.com/sdchadat/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/sdc_hadat/" class="fa fa-instagram"></a>
+<a href="https://www.google.com/maps/place/Al+Sayd%C3%A9+Church/@33.840894,35.5314265,17.11z/data=!4m5!3m4!1s0x151f18284dc708af:0x5a984f5eeb275511!8m2!3d33.8411918!4d35.5304772" class="button">Location</a>
+<span style="color :white"><i class="fas fa-phone" style="font-size:26px"></i>+961 03925326</span><br>
+		<span style="color :white"><i class="fas fa-phone" style="font-size:26px"></i>+961 03747497</span>
+
+
+	</div >
+	<div id="mainright">
+   <ul class="right">
+    <li ><a href="Stages.html">Stages</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="songs.html">Songs</a></li>
+    <li><a href="more.html">More Infos</a></li>
+    </ul>
+    <img src="../images/salut.png" id="salut">
+  </div>
+</div>
+
+<!-- copyrights + social media links-->
+<div id="footer"> Copyright ©Cedars scout team<br>
+All Rights Reserved
+<a id="facebook" href="http://www.facebook.com/sdchadat/" target="new">Facebook</a>
+<a id="insta" href="https://www.instagram.com/sdc_hadat/" target="new">Instagram</a>
+</div>
+
+</body>
+</html>

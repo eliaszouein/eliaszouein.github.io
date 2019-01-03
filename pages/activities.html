@@ -1,0 +1,81 @@
+<!doctype html>
+<!--Elias Zouein 201710039-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Activities</title>
+
+<link href="../styles.css" type="text/css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="headerl">
+	<img src="../images/logo.png" id="logo">
+	<u><h1 class="h1" >Cedars Scout</h1></u>
+	<h2 class="h2" >Our-Lady of Hadat Group</h2>
+	<h3 class="h3">"Scout be prepared!"</h3>
+</div>
+ <!-- drop down menu-->
+
+	<ul class="dropmenu">
+		<li ><a href="home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="events.html">Events</a></li>
+	 <li><div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div></li>
+
+<button class="openBtn" onclick="openSearch()">Open Search Box</button>
+</ul>
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+	</script>
+	
+<div id="main">
+	<div id="mainleft">
+<span style="font-size: 30px; color: red" >Here's some funny activities ideas</span>
+<br><br>
+<iframe width="100%"  class="youtube" height="350" src="https://youtube.com/embed/PnKabGbZxDU" >
+</iframe>
+<br><br>
+<iframe  class="youtube" src="https://youtube.com/embed/dKyQ03aElDo">
+</iframe>	
+<br><br>
+<iframe  class="youtube" src="https://youtube.com/embed/MPrFYuJ7VPc">
+</iframe>
+	</div >
+	<div id="mainright">
+   <ul class="right">
+    <li ><a href="Stages.html">Stages</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="songs.html">Songs</a></li>
+    <li><a href="more.html">More Infos</a></li>
+    </ul>
+    <img src="../images/salut.png" id="salut">
+  </div>
+</div>
+
+<!-- copyrights + social media links-->
+<div id="footer"> Copyright ©Cedars scout team<br>
+All Rights Reserved
+<a id="facebook" href="http://www.facebook.com/sdchadat/" target="new">Facebook</a>
+<a id="insta" href="https://www.instagram.com/sdc_hadat/" target="new">Instagram</a>
+</div>
+
+</body>
+</html>
